@@ -1,0 +1,19 @@
+<form action="/beers/<%= @beer.id %>" method="post">
+  
+  <label for="beer[brand]">Brand</label>
+  <input type="text" placeholder="Enter brand" name = "beer[brand]" value="<%= @beer.brand %>">
+
+  <label for="beer[price]">Price</label>
+  <input type="text" placeholder="Cost" name = "beer[price]" value="<%= @beer.price %>">
+
+  <label for="beer[photo_url]">Photo URL</label>
+  <input type="text" placeholder="Photo URL" name = "beer[photo_url]" value="<%= @beer.photo_url %>">
+
+  <label for="beer[notes]">Notes</label>
+  <input type="text" placeholder="Notes" name="beer[notes]" value="<%= @beer.notes %>">
+  
+  <input type="submit" value="Update">
+
+</form>
+
+<!-- WHy were values put in as string interpolation in Alex's example? -->

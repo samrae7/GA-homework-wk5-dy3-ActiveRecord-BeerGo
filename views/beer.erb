@@ -1,0 +1,10 @@
+<div>
+  <h2><%= @beer.brand %></h2>
+
+  <img src=" <%= @beer.photo_url %> ">
+  <p>Price: <%= @beer.price %></p>
+  <p>Notes: <%= @beer.notes %></p>
+
+</div>
+
+<form method="get" action="<%= @beer.id %>/edit"><button>EDIT</button></form>

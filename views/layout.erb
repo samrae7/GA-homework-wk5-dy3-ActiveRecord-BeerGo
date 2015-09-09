@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to BeerGo</title>
+  <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">BeerGo</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/beers">Beers</a></li>
+        <li><a href="/beers/new">Add Beer</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+  <footer>
+    &copy; Beer
+  </footer>
+</body>
+</html>
