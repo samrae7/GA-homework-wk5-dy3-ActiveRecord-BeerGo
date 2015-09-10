@@ -1,14 +1,16 @@
 
 
 <% @beers.each do |beer| %>
-<p><a href='/beers/<%=beer.id%>'><%= beer.brand %></a></p>
-<img src='<%= beer.photo_url %>'>
+  <div class='beer-box'>
+    <p><a href='/beers/<%=beer.id%>'><%= beer.brand %></a></p>
+    
+    <img src='<%= beer.photo_url %>'>
 
-<form method="get" action="beers/<%=beer.id %>/edit">
-  <button>Edit</button>
+    <form method="get" action="beers/<%=beer.id %>/edit">
+      <button>Edit</button>
 
-<form method="post" action="beers/<%=beer.id %>/delete">
-  <button>Delete</button>
-
-  </form>
+    <form method="post" action="beers/<%=beer.id %>/delete">
+      <button>Delete</button>
+      </form>
+  </div>
 <% end %>
