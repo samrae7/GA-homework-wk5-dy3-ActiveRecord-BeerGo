@@ -62,6 +62,7 @@ header nav ul li a {
 
 .beer-box img {
   margin-top: 10px;
+  height: 200px;
 }
 
 main, footer {
