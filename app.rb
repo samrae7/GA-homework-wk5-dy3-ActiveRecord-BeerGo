@@ -66,11 +66,14 @@ class Beergo < Sinatra::Base
   post '/beers/:id/delete' do
     @beer = Beer.find(params[:id])
     puts @beer
+
+    # binding.pry
+
     if @beer.destroy
       redirect('/beers')
     else
       redirect("/beers/#{@beer.id}")
-      # why not just use params[:id]??
+      # why not just use params[:id]??- seems to be interchangeable ( from checking wth pry)
     end
   end
 
